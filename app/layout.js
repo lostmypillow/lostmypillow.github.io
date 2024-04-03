@@ -2,22 +2,13 @@ import { Public_Sans } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 const pbsans = Public_Sans({ subsets: ["latin"] });
-
+import Title from "./Title";
 export const metadata = {
   title: "Lost My Pillow",
   description: "Johnny's Personal Site",
 };
 
-function Title() {
-  return (
-    <Link
-      href="/"
-      className="flex text-black dark:text-white text-8xl font-extrabold mt-4 border-2 rounded-3xl p-4"
-    >
-      Lost My Pillow
-    </Link>
-  );
-}
+
 
 function Subtitle() {
   return (
