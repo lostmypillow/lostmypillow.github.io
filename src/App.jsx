@@ -68,7 +68,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/github-white.svg" width={28} height={28} />
+          <img src="/github-white.svg" width={28} height={28} alt="GitHub logo" />
           See my GitHub
         </a>
 
