@@ -84,8 +84,8 @@ function App() {
           <img src="/github-white.svg" width={28} height={28} alt="GitHub logo" />
           See my GitHub
         </a>
-        <p className="text-center text-sm">Oh look, no typing animations, no scroll hijacking, no heavy custom fonts, oh boohoo. <br /> THIS is the way every website should be, in my opinion.</p>
-        <p className="italic text-center text-sm">"Make each program do one thing well." <br /> - Doug Mcllroy</p>
+        {/* <p className="text-center text-sm">Oh look, no typing animations, no scroll hijacking, no heavy custom fonts, oh boohoo. <br /> THIS is the way every website should be, in my opinion.</p>
+        <p className="italic text-center text-sm">"Make each program do one thing well." <br /> - Doug Mcllroy</p> */}
         {/* <TabsDemo /> */}
       </div>
     </>
