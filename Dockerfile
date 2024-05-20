@@ -18,5 +18,5 @@ ENV PORT=$PORT
 COPY --from=build /src/.output /src/.output
 # Optional, only needed if you rely on unbundled dependencies
 # COPY --from=build /src/node_modules /src/node_modules
-
+EXPOSE 3000
 CMD [ "npx", "serve", ".output/public" ]
