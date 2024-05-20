@@ -1,8 +1,11 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
+<script setup >
+
 </script>
 
+
+
 <template>
+  <div class="flex flex-col w-svw h-svh">
   <header>
 
 
@@ -14,7 +17,6 @@ import { RouterLink, RouterView } from 'vue-router'
       </nav>
 
   </header>
-
-  <RouterView class="flex flex-col h-full grow items-center justify-center gap-4 px-4" />
+<NuxtPage class="flex flex-col h-full grow items-center justify-center gap-4 px-4"  />
+</div>
 </template>
-
