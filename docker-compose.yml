@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   nuxtapp:
-    image: nuxtapp
+    image: pillowsite
     build:
       context: .
       dockerfile: ./Dockerfile
