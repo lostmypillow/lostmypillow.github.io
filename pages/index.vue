@@ -9,10 +9,9 @@ import { RouterLink } from 'vue-router'
           I'm Johnny Lin, <br /> a.k.a LostMyPillow
         </h1>
         <p class="text-center">
-          I build websites with no frills & sensible UI/UX.
-          <br />I also build fast & secure backends.
-          <br />
-          Planning to build mobile and desktop apps.
+          I make apps
+          <br />with sensible UI/UX and no frills.
+    
         </p>
         <a
           class="flex bg-black text-white rounded-full px-4 py-2 items-center justify-center h-11 w-fit gap-2"
@@ -24,7 +23,7 @@ import { RouterLink } from 'vue-router'
           See my GitHub
         </a>
 
-        <RouterLink to="/about" class="flex bg-black text-white rounded-full px-4 py-2 items-center justify-center h-11 w-fit gap-2">Next Page</RouterLink>
+        <RouterLink to="/about" class="flex bg-black text-white rounded-full px-4 py-2 items-center justify-center h-11 w-fit gap-2">See My Apps</RouterLink>
             
   </main>
 </template>
