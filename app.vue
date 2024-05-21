@@ -1,4 +1,4 @@
-<script setup >
+<script setup>
 
 </script>
 
@@ -6,17 +6,22 @@
 
 <template>
   <div class="flex flex-col w-svw h-svh">
-  <header>
+    <header>
 
 
 
 
       <nav class="flex flex-row items-center justify-between px-4 h-14">
-        <RouterLink to="/" class="text-center font-bold text-2xl">LMP</RouterLink>
-        <!-- <RouterLink to="/about">About</RouterLink> -->
+
+        <NuxtLink to="/" class=" flex flex-row items-center justify-center gap-2 text-center font-bold text-2xl">
+          <img src="./public/icon.jpg" class="h-[24px] rounded-full">
+          LostMyPillow
+        </NuxtLink>
+
+
       </nav>
 
-  </header>
-<NuxtPage class="flex flex-col h-full grow items-center justify-center gap-4 px-4"  />
-</div>
+    </header>
+    <NuxtPage class="flex flex-col w-full h-full grow gap-4 px-4 mb-4" />
+  </div>
 </template>
