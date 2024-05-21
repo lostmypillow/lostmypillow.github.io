@@ -26,7 +26,7 @@ import { RouterLink } from 'vue-router'
       See my GitHub
     </NuxtLink>
 
-    <NuxtLink to="/portfolio"
+    <NuxtLink to="/apps"
       class="flex bg-black text-white rounded-full px-4 py-2 items-center justify-center h-11 w-fit gap-2"><svg
         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase">

@@ -25,6 +25,16 @@ const projects = [
 
   },
   {
+    "name": "LeosPen",
+    "desc": "Sell Leonardo this pen",
+    "logo": "leospen.webp",
+    "demo": "https://lostmypillow.github.io/leospen/",
+    "github": "https://github.com/lostmypillow/leospen",
+    "screenshots": [
+      "leospen1.webp","leospen2.webp","leospen3.webp","leospen4.webp",
+  ]
+  },
+  {
     "name": "JZuvio",
     "desc": "A Better Zuvio",
     "logo": "placeholder48.webp",
