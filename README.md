@@ -2,6 +2,9 @@
 
 Repository for my main site. Soon I'll be moving this off GitHub Pages and onto my own server behind a custom domain.
 
+## Tech Stack
+**Nuxt** with **Vue(Jacascript)**, styled with **TailwindCSS**
+
 ## Why Vue, and not React?
 
 I've oscillated between React and Vue for a while, and although I consider React code much more manageable for larger projects, I find Vue code WAY more readable and fun to write with. Since a portfolio site is pretty light in terms of interativity I've opted to use Vue (in extension Nuxt) for my own site.
