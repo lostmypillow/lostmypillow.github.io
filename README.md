@@ -1,75 +1,28 @@
-# Nuxt 3 Minimal Starter
+# LostMyPillow Main Site
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Repository for my main site. Soon I'll be moving this off GitHub Pages and onto my own server behind a custom domain.
 
-## Setup
+## Why Vue, and not React?
 
-Make sure to install the dependencies:
+I've oscillated between React and Vue for a while, and although I consider React code much more manageable for larger projects, I find Vue code WAY more readable and fun to write with. Since a portfolio site is pretty light in terms of interativity I've opted to use Vue (in extension Nuxt) for my own site.
 
-```bash
-# npm
-npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Recreate this Project
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
+corepack enable && pnpm install
 pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## Why PNPM?
 
-Build the application for production:
+It's faster than NPM
 
-```bash
-# npm
-npm run build
 
-# pnpm
-pnpm run build
+## Future for This Project
 
-# yarn
-yarn build
+### 1. Docker
+A Dockerfile and a Docker Compose file exists because there are plans to deploy this in Docker on my own Linux server, it has been tested...somewhat.
 
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### 2. Firebase
+Planning to move this to a simple NoSQL database such as Firebase, or if I feel like it, a self-hosted SQL server.
