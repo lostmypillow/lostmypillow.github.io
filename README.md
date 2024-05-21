@@ -4,6 +4,7 @@ Repository for my main site. Soon I'll be moving this off GitHub Pages and onto 
 
 ## Tech Stack
 **Nuxt** with **Vue(Jacascript)**, styled with **TailwindCSS**
+All images in the efficient WEBP format.
 
 ## Why Vue, and not React?
 
