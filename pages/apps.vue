@@ -5,43 +5,43 @@ const projects = [
   {
     "name": "JSearch",
     "desc": "OMDb API Frontend",
-    "logo": "jsearch.webp",
+    "logo": "/jsearch.webp",
     "demo": "https://lostmypillow.github.io/jsearch",
     "github": "https://github.com/lostmypillow/jsearch",
     "screenshots": [
-      "mobile_google.webp", "mobile_movies.webp", "desktop_google.webp", "desktop_movies.webp",
+      "/mobile_google.webp", "/mobile_movies.webp", "/desktop_google.webp", "/desktop_movies.webp",
     ]
 
   },
   {
     "name": "JCourses",
     "desc": "NTUT Scraper Backend",
-    "logo": "jcourses.webp",
+    "logo": "/jcourses.webp",
     "demo": "http://lostmypillow.pythonanywhere.com/api/docs",
     "github": "https://github.com/lostmypillow/jcourses",
     "screenshots": [
-      "jcourses1.webp", "jcourses2.webp", "jcourses3.webp", "jcourses4.webp", "jcourses5.webp",
+      "/jcourses1.webp", "/jcourses2.webp", "/jcourses3.webp", "/jcourses4.webp", "/jcourses5.webp",
     ]
 
   },
   {
     "name": "LeosPen",
     "desc": "Sell Leonardo this pen",
-    "logo": "leospen.webp",
+    "logo": "/leospen.webp",
     "demo": "https://lostmypillow.github.io/leospen/",
     "github": "https://github.com/lostmypillow/leospen",
     "screenshots": [
-      "leospen1.webp","leospen2.webp","leospen3.webp","leospen4.webp",
+      "/leospen1.webp","/leospen2.webp","/leospen3.webp","/leospen4.webp",
   ]
   },
   {
     "name": "JZuvio",
     "desc": "A Better Zuvio",
-    "logo": "placeholder48.webp",
+    "logo": "/placeholder48.webp",
     "demo": "/sorry",
     "github": "https://github.com/lostmypillow/jzuvio",
     "screenshots": [
-      "placeholder.webp",
+      "/placeholder.webp",
   ]
   },
 ]
