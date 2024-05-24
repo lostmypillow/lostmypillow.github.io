@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router'
 const projects = [
   {
     "name": "JSearch",
-    "desc": "OMDb API Frontend",
+    "desc": "React Frontend for OMDb API",
     "logo": "/jsearch.webp",
     "demo": "https://lostmypillow.github.io/jsearch",
     "github": "https://github.com/lostmypillow/jsearch",
@@ -15,7 +15,7 @@ const projects = [
   },
   {
     "name": "JCourses",
-    "desc": "NTUT Scraper Backend",
+    "desc": "Web Scraper API written in Django",
     "logo": "/jcourses.webp",
     "demo": "http://lostmypillow.pythonanywhere.com/api/docs",
     "github": "https://github.com/lostmypillow/jcourses",
@@ -31,8 +31,8 @@ const projects = [
     "demo": "https://lostmypillow.github.io/leospen/",
     "github": "https://github.com/lostmypillow/leospen",
     "screenshots": [
-      "/leospen1.webp","/leospen2.webp","/leospen3.webp","/leospen4.webp",
-  ]
+      "/leospen1.webp", "/leospen2.webp", "/leospen3.webp", "/leospen4.webp",
+    ]
   },
   {
     "name": "JZuvio",
@@ -42,22 +42,22 @@ const projects = [
     "github": "https://github.com/lostmypillow/jzuvio",
     "screenshots": [
       "/placeholder.webp",
-  ]
+    ]
   },
 ]
 
 </script>
 <template>
-  <main class="flex md:flex-wrap md:flex-row items-center md:items-start justify-start pt-4 gap-8">
+  <main class="flex flex-col md:flex-wrap items-center justify-start md:px-96 pb-6 gap-6">
 
 
-    <Card v-for="project in projects" :name="project.name" :desc="project.desc" :logo="project.logo"
-      :demo="project.demo" :github="project.github" :screenshots="project.screenshots" />
-    <div>
+<Card v-for="project in projects" :name="project.name" :desc="project.desc" :logo="project.logo"
+      :demo="project.demo" :github="project.github"  />
 
-    </div>
-
+  
   </main>
 </template>
 
-<style></style>
+<style>
+
+</style>

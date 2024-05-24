@@ -5,23 +5,21 @@ defineProps(['name', 'desc', 'logo', 'github', 'demo', 'screenshots'])
 
 <template>
 
-    <div
-        class="flex flex-col w-full items-start justify-between border-2 gap-6 rounded-xl p-4 border-black shadow-xl md:w-[384px] md:h-[384px]">
+    <div class="flex flex-col md:flex-row w-full items-center justify-between  gap-2 rounded-xl p-4 shadow-xl  ">
 
-        <div id="firstrow" class="flex flex-row items-center justify-start w-full gap-4">
 
-            <img class="rounded-xl" :src="logo" width="48px" height="48px" loading="eager">
+        <div class="flex flex-row gap-4">
+            <img class="rounded-xl" :src="logo" width="48px" height="48px" loading="lazy">
 
             <h1 class="flex items-center justify-center text-4xl text-center"> {{ name }} </h1>
-
-            <h2 class="flex text-sm items-center justify-center text-center"> {{ desc }} </h2>
-
         </div>
-        <div id="anotherrow" class="flex flex-row items-center justify-start w-full gap-4 overflow-x-auto">
-            <img v-for="image in screenshots" :src="image" class=" max-h-64 md:max-h-48 " alt="" loading="lazy">
-        </div>
-        <div id="secondrow" class="flex flex-row items-center justify-between w-full">
 
+
+        <h2 class="flex text-sm items-center justify-center text-center"> {{ desc }} </h2>
+
+
+
+        <div class="flex flex-row gap-2">
             <a class="flex bg-black text-white rounded-full px-4 py-2 items-center justify-center h-11 w-fit gap-2"
                 :href="github" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -34,7 +32,8 @@ defineProps(['name', 'desc', 'logo', 'github', 'demo', 'screenshots'])
                 Github
             </a>
 
-            <NuxtLink v-if="demo.startsWith('http') == true" class="flex bg-black text-white rounded-full px-4 py-2 items-center justify-center h-11 w-fit gap-2"
+            <NuxtLink v-if="demo.startsWith('http') == true"
+                class="flex bg-black text-white rounded-full px-4 py-2 items-center justify-center h-11 w-fit gap-2"
                 :to="demo" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -47,7 +46,8 @@ defineProps(['name', 'desc', 'logo', 'github', 'demo', 'screenshots'])
                 </svg>
                 Demo
             </NuxtLink>
-            <NuxtLink v-else class="flex bg-black text-white rounded-full px-4 py-2 items-center justify-center h-11 w-fit gap-2"
+            <NuxtLink v-else
+                class="flex bg-black text-white rounded-full px-4 py-2 items-center justify-center h-11 w-fit gap-2"
                 :to="demo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -60,11 +60,14 @@ defineProps(['name', 'desc', 'logo', 'github', 'demo', 'screenshots'])
                 </svg>
                 Demo
             </NuxtLink>
-            
-
-
-
         </div>
 
+
+
+
+
+
     </div>
+
+
 </template>

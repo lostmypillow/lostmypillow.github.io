@@ -14,11 +14,11 @@ const route = useRoute()
       <nav class="flex flex-row items-center justify-between px-4 h-14">
 
         <NuxtLink to="/" class=" flex flex-row items-center justify-center gap-2 text-center font-bold text-2xl">
-          <img src="./public/icon.jpg" class="h-[24px] rounded-full">
-          LostMyPillow 
-          
-          <div v-if="route.name != 'index'">{{ route.name.charAt(0).toUpperCase() + route.name.slice(1)}}</div>
-          
+          <img src="./public/icon.webp" class="h-[24px] rounded-full">
+          LostMyPillow
+
+          <div v-if="route.name != 'index'">{{ route.name.charAt(0).toUpperCase() + route.name.slice(1) }}</div>
+
         </NuxtLink>
 
 
