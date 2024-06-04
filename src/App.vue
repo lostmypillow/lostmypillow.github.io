@@ -52,18 +52,21 @@ const show = ref(false)
 </script>
 
 <template>
-  <div class="flex flex-row items-end justify-start gap-2">  <h1 class="text-4xl font-extrabold">LostMyPillow</h1>
-  <h2 class="text-2xl font-thin text-gray-400">Home of Johnny Lin</h2></div>
-
-  <p class="text-lg">I make apps with sensible UI/UX and no frills.</p>
-  <button class="btn text-xl">Contact Me</button>
-  <button class="btn text-xl">My GitHub</button>
-  <h3 class="text-xl">
+  <div class="flex flex-col w-svw h-svh justify-start">
+  <div class="flex flex-col items-center gap-2">  
+    <h1 class="text-4xl font-extrabold">
+      LostMyPillow
+    </h1>
+    <h2 class="text-2xl font-thin text-gray-400">
+      Home of Johnny Lin
+    </h2> 
+    <p class="text-lg">I make apps with sensible UI/UX and no frills.</p>
+    <div class="flex flex-row gap-4"><button class="btn text-xl">Contact Me</button>
+  <button class="btn text-xl">My GitHub</button></div>
+   <h3 class="text-xl">
 My Projects
   </h3>
-  <button class="btn" @click="getData">Button</button>
-
-  <div class="overflow-x-auto">
+  <button class="btn" @click="getData">Button</button><div class="overflow-x-auto">
   <table v-if="show == true" class="table table-xs table-pin-rows table-pin-cols">
     <thead>
       <tr>
@@ -80,5 +83,11 @@ My Projects
 </tbody>
 
   </table>
+  </div>
+  </div>
+
+ 
+ 
+
   </div>
 </template>
