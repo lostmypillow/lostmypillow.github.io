@@ -1,10 +1,9 @@
 # LostMyPillow Main Site
 
-Repository for my main site. Soon I'll be moving this off GitHub Pages and onto my own server behind a custom domain.
+Repository for my main site. Soon I'll be moving this off GitHub Pages and onto my own server behind my custom domain.
 
 ## Tech Stack
-**Nuxt** with **Vue(Jacascript)**, styled with **TailwindCSS**
-All images in the efficient WEBP format.
+**Vite** with **Vue(Jacascript)**, styled with **TailwindCSS**
 
 ## Why Vue, and not React?
 
