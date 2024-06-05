@@ -6,8 +6,8 @@ defineProps(['data'])
 
 <template>
     <tr>
-        <th>{{ data.logo }}</th>
-        <td>{{ data.name }}</td>
+        <th>{{ data.name }}</th>
+   
         <td>{{ data.description }}</td>
         <td>
             <a class="btn" :href=data.demo>Demo</a>
