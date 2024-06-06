@@ -3,7 +3,7 @@
 Repository for my main site. Soon I'll be moving this off GitHub Pages and onto my own server behind my custom domain.
 
 ## Tech Stack
-**Vite** with **Vue(Jacascript)**, styled with **TailwindCSS**
+**Vite** with **Vue(Javascript)**, styled with **TailwindCSS**
 
 ## Why Vue, and not React?
 
