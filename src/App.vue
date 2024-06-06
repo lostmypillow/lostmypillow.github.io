@@ -1,92 +1,126 @@
 <script setup>
+import { onMounted, ref } from 'vue'
 import { initializeApp } from "firebase/app";
-// import { getFirestore } from "firebase/firestore";
-// import { collection, getDocs } from "firebase/firestore";
-// import TableRow from './components/TableRow.vue'
-// import {ref} from 'vue'
-// // TODO: Replace the following with your app's Firebase project configuration
-// // See: https://support.google.com/firebase/answer/7015592
-// const firebaseConfig = {
-//   apiKey: "AIzaSyApoLScnyY0elI4d5H88UJp_eBIQoWo3Hc",
-//   authDomain: "mainsite-1d0e8.firebaseapp.com",
-//   projectId: "mainsite-1d0e8",
-//   storageBucket: "mainsite-1d0e8.appspot.com",
-//   messagingSenderId: "108336659505",
-//   appId: "1:108336659505:web:6490bfe05e2c8b1673a910"
-// };
+import { collection, getDocs, getFirestore } from "firebase/firestore";
+import TableRow from './components/TableRow.vue'
+import TableHead from "./components/TableHead.vue";
+import SectionTitle from "./components/SectionTitle.vue";
+import SectionContent from "./components/SectionContent.vue";
+import GitHubIcon from "./components/GitHubIcon.vue";
 
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
+const firebaseConfig = {
+  apiKey: "AIzaSyApoLScnyY0elI4d5H88UJp_eBIQoWo3Hc",
+  authDomain: "mainsite-1d0e8.firebaseapp.com",
+  projectId: "mainsite-1d0e8",
+  storageBucket: "mainsite-1d0e8.appspot.com",
+  messagingSenderId: "108336659505",
+  appId: "1:108336659505:web:6490bfe05e2c8b1673a910"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 
-// // Initialize Cloud Firestore and get a reference to the service
-// const db = getFirestore(app);
+// Initialize Cloud Firestore and get a reference to the service
+const db = getFirestore(app);
+const isLoading = ref(false)
+const list = []
 
-// const list = []
+async function getData() {
+  isLoading.value = true
+  const querySnapshot = await getDocs(collection(db, "projects"));
+  isLoading.value = false
+  // console.log(querySnapshot)
+  querySnapshot.forEach((doc) => {
+    // console.log(`${doc.id} => ${doc.data()}`);
+    list.push(
+      {
+        "id": doc.id,
+        "name": doc.data().name,
+        "description": doc.data().description,
+        "demo": doc.data().demo,
+        "github": doc.data().github,
+      }
+    )
+  });
+  // console.log(list)
 
-// async function getData() {
-//   const querySnapshot = await getDocs(collection(db, "projects"));
-//   console.log(querySnapshot)
-//   querySnapshot.forEach((doc) => {
-//     console.log(`${doc.id} => ${doc.data()}`);
-//     list.push(
-//       {
-//         "id": doc.id,
-//         "name": doc.data().name,
-//         "description": doc.data().description,
-//         "logo": doc.data().logo,
-//         "demo": doc.data().demo,
-//         "github": doc.data().github,
-//         "screenshots": doc.data().screenshots,
-//       }
-//     )
-//   });
-//   console.log(list)
-//   show.value = true
+}
 
-// }
+onMounted(() => {
+  getData()
+})
 
-// const show = ref(false)
+
 
 
 </script>
 
 <template>
-  <!-- <div class="flex flex-col w-svw h-svh justify-start">
-  <div class="flex flex-col items-center gap-2">  
-    <h1 class="text-4xl font-extrabold">
+  <div class="flex flex-col w-svw h-svh justify-start p-8">
+
+    <h1 class="text-4xl font-extrabold mb-4">
       LostMyPillow
     </h1>
-    <h2 class="text-2xl font-thin text-gray-400">
-      Home of Johnny Lin
-    </h2> 
-    <p class="text-lg">I make apps with sensible UI/UX and no frills.</p>
-    <div class="flex flex-row gap-4"><button class="btn text-xl">Contact Me</button>
-  </div> -->
-   <h3 class="text-xl">
-Under Construction! <br> Visit my GitHub instead.
-  </h3><a class="btn text-xl" href="https://github.com/lostmypillow">My GitHub</a>
-  <!-- <button class="btn" @click="getData">My Projects</button><div class="overflow-x-auto"> -->
-  <!-- <table v-if="show == true" class="table table-xs table-pin-rows table-pin-cols">
-    <thead>
-      <tr>
-        <th>Name</th> 
-     
-        <td>Description</td> 
-        <td>Demo</td> 
-        <td>GitHub</td> 
-        <th></th> 
-      </tr>
-    </thead> 
-<tbody>
-<TableRow v-for="de in list" :data=de />
-</tbody>
 
-  </table>-->
-  <!-- </div>
-  </div>  -->
 
- 
- 
+    <SectionTitle>
+      Who am I?
+    </SectionTitle>
+
+    <SectionContent>
+      <p class="text-base">
+        I make full stack apps with sensible UI/UX and no frills.
+        <br>
+        Venturing into Java & Kotlin at the moment, for cross platform app development.
+      </p>
+    </SectionContent>
+
+    <SectionTitle>
+      Where are my apps?
+    </SectionTitle>
+
+    <SectionContent>
+      <div class="flex flex-col gap-4">
+        <a class="btn bg-slate-500 text-slate-200 text-base  h-11 w-fit" href="https://github.com/lostmypillow"
+          target="_blank" rel="noopener noreferrer">
+          <GitHubIcon />
+          Head to My GitHub
+        </a>
+        <p>
+          OR see them all below:
+        </p>
+
+        <div v-if="isLoading" class="flex items-center justify-center w-full gap-2">
+          <span class="loading loading-spinner text-primary" sta></span>
+          Loading...
+        </div>
+
+        <TableHead v-else>
+          <TableRow v-for="de in list" :data=de />
+        </TableHead>
+      </div>
+
+
+    </SectionContent>
+
+
+    <SectionTitle>
+      How do you contact me?
+    </SectionTitle>
+
+    <SectionContent>
+      <a class="btn text-base" href="mailto:lostmypillow@icloud.com">
+        Email
+      </a>
+    </SectionContent>
+
+
+
+
+  </div>
+
+
+
 
 </template>
