@@ -110,8 +110,8 @@ onMounted(() => {
     </SectionTitle>
 
     <SectionContent>
-      <a class="btn text-base" href="mailto:lostmypillow@icloud.com">
-        Email
+      <a class="btn text-base btn-primary" href="mailto:lostmypillow@icloud.com">
+        Email Me
       </a>
     </SectionContent>
 

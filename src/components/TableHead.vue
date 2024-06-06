@@ -6,7 +6,7 @@
 
 
 
-    <table  class="table table-xs table-pin-rows table-pin-cols">
+    <table  class="table table-xs table-pin-rows table-pin-cols w-fit">
         <thead>
             <tr >
                 <th class="text-center">Project</th>
