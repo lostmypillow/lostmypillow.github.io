@@ -3,7 +3,7 @@
 Repository for my main site. Soon I'll be moving this off GitHub Pages and onto my own server behind my custom domain.
 
 ## Tech Stack
-**Vite** with **Vue(Javascript)**, styled with **TailwindCSS**
+**Vite** with **Vue(Javascript)**, styled with **TailwindCSS**, using **Cloud Firestore** database
 
 ## Why Vue, and not React?
 
@@ -27,5 +27,7 @@ It's faster than NPM
 ### 1. Docker
 A Dockerfile and a Docker Compose file exists because there are plans to deploy this in Docker on my own Linux server, it has been tested...somewhat.
 
-### 2. Firebase
-Planning to move this to a simple NoSQL database such as Firebase, or if I feel like it, a self-hosted SQL server.
+~~### 2. Firebase
+Planning to move this to a simple NoSQL database such as Firebase, or if I feel like it, a self-hosted SQL server.~~
+
+Implemented, database now in Cloud Firestore
