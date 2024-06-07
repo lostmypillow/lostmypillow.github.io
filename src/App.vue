@@ -70,7 +70,9 @@ onMounted(() => {
 
     <SectionContent>
       <p class="text-base">
-        I'm Johnny Lin I make full stack apps with sensible UI/UX and no frills.
+        I'm Johnny Lin.
+        <br>
+        I make full stack apps with sensible UI/UX and no frills.
         <br>
         Venturing into Java & Kotlin at the moment, for cross platform app development.
       </p>
@@ -81,8 +83,8 @@ onMounted(() => {
     </SectionTitle>
 
     <SectionContent>
-      <div class="flex flex-col gap-4 items-center justify-center">
-        <div class="flex flex-row gap-2 items-center justify-center">
+      <div class="flex flex-col gap-4 items-center justify-start">
+        <div class="flex flex-row gap-2 items-center justify-start">
           <a class="btn bg-slate-500 text-slate-200 text-base  h-11 w-fit" href="https://github.com/lostmypillow"
           target="_blank" rel="noopener noreferrer">
           <GitHubIcon />
