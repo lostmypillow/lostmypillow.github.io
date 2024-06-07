@@ -59,8 +59,8 @@ onMounted(() => {
 <template>
   <div class="flex flex-col w-svw h-svh justify-start p-8">
 
-    <h1 class="text-4xl font-extrabold mb-4">
-      LostMyPillow
+    <h1 class="text-4xl font-extrabold mb-6">
+      LOSTMYPILLOW
     </h1>
 
 
@@ -70,7 +70,7 @@ onMounted(() => {
 
     <SectionContent>
       <p class="text-base">
-        I make full stack apps with sensible UI/UX and no frills.
+        I'm Johnny Lin I make full stack apps with sensible UI/UX and no frills.
         <br>
         Venturing into Java & Kotlin at the moment, for cross platform app development.
       </p>
@@ -82,14 +82,16 @@ onMounted(() => {
 
     <SectionContent>
       <div class="flex flex-col gap-4">
-        <a class="btn bg-slate-500 text-slate-200 text-base  h-11 w-fit" href="https://github.com/lostmypillow"
+        <div class="flex flex-row gap-2">
+          <a class="btn bg-slate-500 text-slate-200 text-base  h-11 w-fit" href="https://github.com/lostmypillow"
           target="_blank" rel="noopener noreferrer">
           <GitHubIcon />
           Head to My GitHub
         </a>
         <p>
           OR see them all below:
-        </p>
+        </p></div>
+        
 
         <div v-if="isLoading" class="flex items-center justify-center w-full gap-2">
           <span class="loading loading-spinner text-primary" sta></span>
