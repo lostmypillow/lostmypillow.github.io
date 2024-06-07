@@ -83,8 +83,8 @@ onMounted(() => {
     </SectionTitle>
 
     <SectionContent>
-      <div class="flex flex-col gap-4 items-center justify-start">
-        <div class="flex flex-row gap-2 items-center justify-start">
+      <div class="flex flex-col gap-4 items-start justify-center">
+        <div class="flex flex-row gap-2 items-center justify-center">
           <a class="btn bg-slate-500 text-slate-200 text-base  h-11 w-fit" href="https://github.com/lostmypillow"
           target="_blank" rel="noopener noreferrer">
           <GitHubIcon />
