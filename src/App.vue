@@ -57,7 +57,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col w-svw h-svh justify-start p-8">
+  <div class="flex flex-col w-svw h-svh items-center justify-between p-8">
 
     <h1 class="text-4xl font-extrabold mb-6">
       LOSTMYPILLOW
@@ -85,7 +85,7 @@ onMounted(() => {
     <SectionContent>
       <div class="flex flex-col gap-4 items-start justify-center">
         <div class="flex flex-row gap-2 items-center justify-center">
-          <a class="btn bg-slate-500 text-slate-200 text-base  h-11 w-fit" href="https://github.com/lostmypillow"
+          <a class="btn bg-slate-500 text-slate-200 text-base  h-11 px-4 py-2" href="https://github.com/lostmypillow"
           target="_blank" rel="noopener noreferrer">
           <GitHubIcon />
           Head to My GitHub
@@ -113,7 +113,7 @@ onMounted(() => {
       How do you contact me?
     </SectionTitle>
 
-    <SectionContent>
+    <SectionContent class="pb-4">
       <a class="btn text-base btn-primary" href="mailto:lostmypillow@icloud.com">
         Email Me
       </a>
