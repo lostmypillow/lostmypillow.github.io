@@ -101,7 +101,7 @@ const list = [
   <div class="navbar flex w-full bg-base-100">
     <a class="btn btn-ghost text-xl">LOSTMYPILLOW</a>
   </div>
-  <div class="flex flex-row  w-full items-center md:items-start justify-center ">
+  <div class="flex flex-col md:flex-row  w-full items-center md:items-start justify-center ">
 
 
 
