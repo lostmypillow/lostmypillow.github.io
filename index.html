@@ -1,222 +1,308 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Johnny's Personal Site" />
+        <link rel="icon" href="favicon.ico" />
+        <link rel="icon" href="icon.webp" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+        />
+        <title>LostMyPillow</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Johnny's Personal Site" />
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="icon" href="/icon.webp" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
-  <title>LostMyPillow</title>
-</head>
+    <body>
+        <style>
+            #logo {
+                margin-bottom: 16px;
+                clip-path: circle();
+            }
+        </style>
+        <main class="container-fluid">
+            <nav>
+                <ul>
+                    <li>
+                        <img id="logo" src="icon.webp" width="36" alt="" />
+                    </li>
+                    <li>
+                        <h1>LostMyPillow</h1>
+                    </li>
+                </ul>
+            </nav>
 
-<body>
-  <style>
-    #logo {
-      margin-bottom: 16px;
-      clip-path: circle();
-    }
-  </style>
-  <main class="container-fluid">
-    <nav>
-      <ul>
-        <li>
-          <img id="logo" src="/icon.webp" width="36" alt="">
-        </li>
-        <li>
-          <h1>LostMyPillow</strong></h1>
-        </li>
+            <section id="who-am-i">
+                <h2>Who am I?</h2>
 
-      </ul>
+                <ul>
+                    <li>
+                        I'm <b>Johnny Lin</b>, aka LostMyPillow. I'm a
+                        self-taught web dev, building <b>Django (Python)</b> and
+                        <b>FastAPI (Python)</b> web apps that serve
+                        <b>React/Vue</b> frontends. I self-host those sites on
+                        my RPi 3B+ with <b>Docker containers</b>, including this
+                        very site.
+                    </li>
 
-    </nav>
+                    <li>
+                        I'm learning <b>Java</b> for future Spring Boot projects
+                        and <b>Expo (React Native)</b> for my foray into
+                        cross-platform mobile app development.
+                    </li>
 
+                    <li>
+                        I like to do some light <b>video editing</b> in my spare
+                        time.
+                    </li>
+                </ul>
+            </section>
 
-    <section id="who-am-i">
-      <h2>Who am I?</h2>
+            <section id="my-programming-projects">
+                <h2>My Programming Projects</h2>
 
-      <ul>
-        <li>
-          I'm <b>Johnny Lin</b>, aka LostMyPillow. I'm a self-taught web dev, building <b>Django (Python)</b> and <b>FastAPI (Python)</b> web apps
-          that serve <b>React/Vue</b> frontends. I
-          self-host those sites on my RPi 3B+ with <b>Docker containers</b>, including this very site.
-        </li>
+                <ul>
+                    <li>
+                        JCourses:
+                        <a
+                            href="https://jcourses.lostmypillow.duckdns.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Demo </a
+                        >,
+                        <a
+                            href="https://github.com/lostmypillow/jcourses"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        JRAR:
+                        <a
+                            href="https://jrar.lostmypillow.duckdns.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Demo </a
+                        >,
+                        <a
+                            href="https://github.com/lostmypillow/jrar"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        JSearch:
+                        <a
+                            href="https://jsearch.lostmypillow.duckdns.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Demo </a
+                        >,
+                        <a
+                            href="https://github.com/lostmypillow/jsearch"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        JSearch Vue:
+                        <a
+                            href="https://lostmypillow.github.io/jsearch-vue"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Demo </a
+                        >,
+                        <a
+                            href="https://github.com/lostmypillow/jsearch-vue"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+                    </li>
 
-        <li>I'm learning <b>Java</b> for future Spring Boot projects, <b>PHP</b> for Laravel projects and <b>Expo (React
-            Native)</b> for my foray into cross-platform mobile app development.
-        </li>
+                    <li>
+                        JSearch React:
+                        <a
+                            href="https://lostmypillow.github.io/jsearch-react"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Demo (Not working) </a
+                        >,
+                        <a
+                            href="https://github.com/lostmypillow/jsearch-react"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+                    </li>
 
-        <li>I like to do some light <b>video editing</b> in my spare time.</li>
+                    <li>
+                        Dancing Goats (Work In Progress):
+                        <a
+                            href="https://dancinggoats.pages.dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Demo </a
+                        >,
+                        <a
+                            href="https://github.com/lostmypillow/dancinggoats"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+                    </li>
 
-      </ul>
+                    <li>JZuvio (Upcoming)</li>
 
-    </section>
+                    <li>JQuotes (Upcoming)</li>
 
-    <section id="my-programming-projects">
+                    <li>JBlackjack (Upcoming)</li>
+                </ul>
+            </section>
 
-      <h2>
-        My Programming Projects
-      </h2>
+            <section id="links">
+                <h2>Links</h2>
+                <ul>
+                    <li>
+                        <a
+                            href="mailto:lostmypillow@icloud.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Email Me
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/lostmypillow"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            My GitHub
+                        </a>
+                    </li>
 
-      <ul>
+                    <li>
+                        <a
+                            href="https://youtube.com/@lostmypillow"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            My YouTube
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://youtube.com/playlist?list=PLEVMOSQSn33w81kR6ejWmgBx_z-2ppzp3&si=QOXVfR5vYIBrUkjl"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            My Video Portfolio
+                        </a>
+                    </li>
 
-        <li>
-          JCourses: <a href="https://jcourses.lostmypillow.duckdns.org/" target="_blank" rel="noopener noreferrer">
-            Demo
-          </a>, <a href="https://github.com/lostmypillow/jcourses" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
+                    <li>
+                        <a
+                            href="https://linkedin.com/in/lostmypillow"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            My LinkedIn
+                        </a>
+                    </li>
 
-        </li>
-        <li>
-          JRAR: <a href="https://jrar.lostmypillow.duckdns.org/" target="_blank" rel="noopener noreferrer">
-            Demo
-          </a>, <a href="https://github.com/lostmypillow/jrar" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </li>
-        <li>
-          JSearch: <a href="https://jsearch.lostmypillow.duckdns.org" target="_blank" rel="noopener noreferrer">
-            Demo
-          </a>, <a href="https://github.com/lostmypillow/jsearch" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </li>
-        <li>
-          JSearch Vue: <a href="https://lostmypillow.github.io/jsearch-vue" target="_blank" rel="noopener noreferrer">
-            Demo
-          </a>, <a href="https://github.com/lostmypillow/jsearch-vue" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </li>
+                    <li>
+                        <a
+                            href="https://1drv.ms/f/s!AkZtyLYEg3DWhxgluWUy3XTAHC8Q?e=hVmnM6"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            OneDrive folder of all the PPTs I made
+                        </a>
+                    </li>
+                </ul>
+            </section>
 
-        <li>
-          JSearch React: <a href="https://lostmypillow.github.io/jsearch-react" target="_blank"
-            rel="noopener noreferrer">
-            Demo (Not working)
-          </a>, <a href="https://github.com/lostmypillow/jsearch-react" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </li>
+            <section id="download">
+                <h2>Download</h2>
+                <ul>
+                    <li>
+                        <a
+                            href="https://lostmypillow.github.io/assets/resumeEnglish.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Resume For English Education (ESL) positions
+                        </a>
+                    </li>
 
-        <li>
-          Dancing Goats (Work In Progress): <a href="https://dancinggoats.pages.dev/" target="_blank"
-            rel="noopener noreferrer">
-            Demo
-          </a>, <a href="https://github.com/lostmypillow/dancinggoats" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
+                    <li>
+                        <a
+                            href="https://lostmypillow.github.io/assets/履歷英文.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            英語教育 中文版履歷
+                        </a>
+                    </li>
 
-        </li>
-   
-        <li>
-          JZuvio (Upcoming)
-        </li>
+                    <li>
+                        <a
+                            href="https://lostmypillow.github.io/assets/resumeProgramming.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Resume For Software Development positions
+                        </a>
+                    </li>
 
-        <li>
-          JQuotes (Upcoming)
-        </li>
+                    <li>
+                        <a
+                            href="https://lostmypillow.github.io/assets/履歷程式.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            軟體工程 中文版履歷
+                        </a>
+                    </li>
 
-        <li>
-          JBlackjack (Upcoming)
-        </li>
-      </ul>
-    </section>
+                    <li>
+                        <a
+                            href="https://lostmypillow.github.io/assets/resumeVideo.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            For Video Post-Production positions
+                        </a>
+                    </li>
 
-
-
-
-
-    <section id="links">
-      <h2>Links</h2>
-      <ul>
-        <li>
-          <a href="mailto:lostmypillow@icloud.com" target="_blank" rel="noopener noreferrer">
-            Email Me
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/lostmypillow" target="_blank" rel="noopener noreferrer">
-            My GitHub
-          </a>
-        </li>
-
-
-        <li>
-          <a href="https://youtube.com/@lostmypillow" target="_blank" rel="noopener noreferrer">
-            My YouTube
-          </a>
-        </li>
-        <li>
-          <a href="https://youtube.com/playlist?list=PLEVMOSQSn33w81kR6ejWmgBx_z-2ppzp3&si=QOXVfR5vYIBrUkjl"
-            target="_blank" rel="noopener noreferrer">
-            My Video Portfolio
-          </a>
-        </li>
-
-
-        <li>
-          <a href="https://linkedin.com/in/lostmypillow" target="_blank" rel="noopener noreferrer">
-            My LinkedIn
-          </a>
-        </li>
-
-        <li>
-          <a href="https://1drv.ms/f/s!AkZtyLYEg3DWhxgluWUy3XTAHC8Q?e=hVmnM6" target="_blank" rel="noopener noreferrer">
-            OneDrive folder of all the PPTs I made
-          </a>
-        </li>
-
-      </ul>
-    </section>
-
-    <section id="download">
-      <h2>Download</h2>
-      <ul>
-        <li>
-          <a href="https://lostmypillow.github.io/assets/resumeEnglish.pdf" target="_blank" rel="noopener noreferrer">
-            Resume For English Education (ESL) positions
-          </a>
-        </li>
-
-        <li>
-          <a href="https://lostmypillow.github.io/assets/履歷英文.pdf" target="_blank" rel="noopener noreferrer">
-            英語教育 中文版履歷
-          </a>
-        </li>
-
-        <li>
-          <a href="https://lostmypillow.github.io/assets/resumeProgramming.pdf" target="_blank"
-            rel="noopener noreferrer">
-            Resume For Software Development positions
-          </a>
-
-        </li>
-
-        <li>
-          <a href="https://lostmypillow.github.io/assets/履歷程式.pdf" target="_blank" rel="noopener noreferrer">
-            軟體工程 中文版履歷
-          </a>
-        </li>
-
-        <li>
-          <a href="https://lostmypillow.github.io/assets/resumeVideo.pdf" target="_blank" rel="noopener noreferrer">
-            For Video Post-Production positions
-          </a>
-
-        </li>
-
-        <li>
-          <a href="https://lostmypillow.github.io/assets/履歷影片.pdf" target="_blank" rel="noopener noreferrer">
-            影片後製 中文版履歷
-          </a>
-        </li>
-      </ul>
-
-    </section>
-  </main>
-</body>
-
+                    <li>
+                        <a
+                            href="https://lostmypillow.github.io/assets/履歷影片.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            影片後製 中文版履歷
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </body>
 </html>
