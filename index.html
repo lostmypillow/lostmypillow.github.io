@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Johnny's Personal Site" />
+  <link rel="preload" href="/fonts/OverusedGrotesk-VF.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="favicon.ico" />
   <link rel="icon" href="icon.webp" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -17,6 +18,20 @@
     #logo {
       margin-bottom: 16px;
       clip-path: circle();
+    }
+
+    :root {
+      --pico-font-family-sans-serif: "Overused Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      --font-serif: Georgia, Times, serif;
+      --font-mono: Menlo, Courier, monospace;
+    }
+
+    @font-face {
+      font-family: "Overused Grotesk";
+      src:
+        url("./fonts/OverusedGrotesk-VF.woff2") format("woff2 supports variations"),
+        url("./fonts/OverusedGrotesk-VF.woff2") format("woff2-variations");
+   
     }
   </style>
   <main class="container-fluid">
@@ -34,11 +49,21 @@
     </nav>
 
     <section id="tldr">
+      <h2>TL;DR</h2>
+      <div role="group"> <a role="button" href="resume20240801.pdf">Resume</a>
+
+        <a role="button" href="https://github.com/lostmypillow" class="secondary">GitHub</a>
+        <a href="mailto:lostmypillow@icloud.com" target="_blank" rel="noopener noreferrer" role="button"
+          class="contrast">
+          Email
+        </a>
+      </div>
+
 
     </section>
 
     <section id="who-am-i">
-      <h2>Who am I?</h2>
+      <!-- <h2>Who am I?</h2>
 
       <ul>
         <li>
@@ -52,7 +77,7 @@
             Native)</b> for my foray into cross-platform mobile app development.
         </li>
 
-        <li>I like to do some light <b>video editing</b> in my spare time.</li>
+        <li>I like to do some light <b>video editing</b> in my spare time.</li> -->
 
       </ul>
 
@@ -103,7 +128,7 @@
             </a>
         </footer>
       </article>
-      
+
       <article>
         <header>
           <h3>JSearch</h3>
@@ -117,10 +142,10 @@
               Demo
             </a>
 
-  
+
             <a href="https://github.com/lostmypillow/jsearch/" target="_blank" rel="noopener noreferrer" role="button"
               class="secondary">
-             GitHub
+              GitHub
             </a>
         </footer>
       </article>
@@ -133,19 +158,18 @@
         <footer>
           <div role="group">
 
-            <a class="button" href="" target="_blank" rel="noopener noreferrer"
-              role="button" disabled>
+            <a class="button" href="" target="_blank" rel="noopener noreferrer" role="button" disabled>
               WIP
             </a>
 
-  
+
             <a href="https://github.com/lostmypillow/jquotes/" target="_blank" rel="noopener noreferrer" role="button"
               class="secondary">
-             GitHub
+              GitHub
             </a>
         </footer>
       </article>
-      
+
       <article>
         <header>
           <h3>Dancing Goats (WIP)</h3>
@@ -159,10 +183,10 @@
               Demo
             </a>
 
-  
-            <a href="https://github.com/lostmypillow/dancinggoats" target="_blank" rel="noopener noreferrer" role="button"
-              class="secondary" >
-             GitHub
+
+            <a href="https://github.com/lostmypillow/dancinggoats" target="_blank" rel="noopener noreferrer"
+              role="button" class="secondary">
+              GitHub
             </a>
         </footer>
       </article>
@@ -175,109 +199,22 @@
         <footer>
           <div role="group">
 
-            <a class="button" href="" target="_blank" rel="noopener noreferrer"
-              role="button" disabled>
+            <a class="button" href="" target="_blank" rel="noopener noreferrer" role="button" disabled>
               WIP
             </a>
 
-  
-            <a href="" target="_blank" rel="noopener noreferrer" role="button"
-              class="secondary" disabled>
-             WIP
+
+            <a href="" target="_blank" rel="noopener noreferrer" role="button" class="secondary" disabled>
+              WIP
             </a>
         </footer>
       </article>
 
-      
-    </section>
-
-
-
-
-
-    <section id="links">
-      <h2>Links</h2>
-      <ul>
-        <li>
-          <a href="mailto:lostmypillow@icloud.com" target="_blank" rel="noopener noreferrer">
-            Email Me
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/lostmypillow" target="_blank" rel="noopener noreferrer">
-            My GitHub
-          </a>
-        </li>
-
-        <li>
-          <a href="https://youtube.com/@lostmypillow" target="_blank" rel="noopener noreferrer">
-            My YouTube
-          </a>
-        </li>
-        <li>
-          <a href="https://youtube.com/playlist?list=PLEVMOSQSn33w81kR6ejWmgBx_z-2ppzp3&si=QOXVfR5vYIBrUkjl"
-            target="_blank" rel="noopener noreferrer">
-            My Video Portfolio
-          </a>
-        </li>
-
-        <li>
-          <a href="https://linkedin.com/in/lostmypillow" target="_blank" rel="noopener noreferrer">
-            My LinkedIn
-          </a>
-        </li>
-
-        <li>
-          <a href="https://1drv.ms/f/s!AkZtyLYEg3DWhxgluWUy3XTAHC8Q?e=hVmnM6" target="_blank" rel="noopener noreferrer">
-            OneDrive folder of all the PPTs I made
-          </a>
-        </li>
-
-      </ul>
-    </section>
-
-    <section id="download">
-      <h2>Download</h2>
-      <ul>
-        <li>
-          <a href="https://lostmypillow.github.io/assets/resumeEnglish.pdf" target="_blank" rel="noopener noreferrer">
-            Resume For English Education (ESL) positions
-          </a>
-        </li>
-
-        <li>
-          <a href="https://lostmypillow.github.io/assets/履歷英文.pdf" target="_blank" rel="noopener noreferrer">
-            英語教育 中文版履歷
-          </a>
-        </li>
-
-        <li>
-          <a href="https://lostmypillow.github.io/assets/resumeProgramming.pdf" target="_blank"
-            rel="noopener noreferrer">
-            Resume For Software Development positions
-          </a>
-        </li>
-
-        <li>
-          <a href="https://lostmypillow.github.io/assets/履歷程式.pdf" target="_blank" rel="noopener noreferrer">
-            軟體工程 中文版履歷
-          </a>
-        </li>
-
-        <li>
-          <a href="https://lostmypillow.github.io/assets/resumeVideo.pdf" target="_blank" rel="noopener noreferrer">
-            For Video Post-Production positions
-          </a>
-        </li>
-
-        <li>
-          <a href="https://lostmypillow.github.io/assets/履歷影片.pdf" target="_blank" rel="noopener noreferrer">
-            影片後製 中文版履歷
-          </a>
-        </li>
-      </ul>
 
     </section>
+
+
+
   </main>
 </body>
 
