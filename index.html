@@ -5,224 +5,208 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Johnny's Personal Site" />
-  <link rel="preload" href="/fonts/OverusedGrotesk-VF.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="icon" href="favicon.ico" />
   <link rel="icon" href="icon.webp" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" /> -->
   <title>LostMyPillow</title>
 </head>
 
 <body>
   <style>
-    #logo {
-      margin-bottom: 16px;
-      clip-path: circle();
-    }
-
-    :root {
-      --pico-font-family-sans-serif: "Overused Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-      --font-serif: Georgia, Times, serif;
-      --font-mono: Menlo, Courier, monospace;
-    }
-
-    @font-face {
-      font-family: "Helvetica", "Overused Grotesk", sans-serif;
-      src:
-        url("./fonts/OverusedGrotesk-VF.woff2") format("woff2 supports variations"),
-        url("./fonts/OverusedGrotesk-VF.woff2") format("woff2-variations");
-        font-display: swap;
-   
-    }
-    
-    h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  --pico-font-weight: 600;
-}
+   :root {
+    font-family: 'Atkinson Hyperlegible';
+   }
   </style>
-  <main class="container-fluid">
+  <main class="container">
     <nav>
-      <ul>
-        <li>
-          <img id="logo" src="/icon.webp" width="36" alt="">
-        </li>
-        <li>
-          <h1>LostMyPillow (Johnny)</strong></h1>
-        </li>
-
-      </ul>
+   
+          <h1>LostMyPillow </h1>
+    
 
     </nav>
 
-    <section id="tldr">
-      <h2>TL;DR</h2>
-      <div role="group"> <a role="button" href="resume20240801.pdf">Resume</a>
 
-        <a role="button" href="https://github.com/lostmypillow" class="secondary">GitHub</a>
-        <a href="mailto:lostmypillow@icloud.com" target="_blank" rel="noopener noreferrer" role="button"
-          class="contrast">
-          Email
-        </a>
+<section>
+  <h3>Who am I?</h3>
+  <p>I'm Johnny Lin. </p>
+</section>
+<hr>
+    <section id="tldr">
+      <h3>
+        Let's cut the bullshit, you're here to:
+      </h3>
+
+      <div role="group"></div>
+      <a role="button" href="resume20240801.pdf">
+        Download My Resume
+      </a>
+      <br>
+      <span>OR</span>
+      <a role="button" href="https://github.com/lostmypillow" class="secondary">
+        Visit my GitHub
+      </a>
+      <br>
+      <span>OR</span>
+      <a href="mailto:lostmypillow@icloud.com" target="_blank" rel="noopener noreferrer" role="button" class="contrast">
+        Email Me
+      </a>
+
+    </section>
+
+<hr>
+<section>
+  <h3>
+    What? That's it?
+  </h3>
+  Yeah? What did you expect? 2MBs of JavaScript framework  with banners whooshing in left and right, a 500x500 picture of my face fading in as you scroll, exquisite sans serif fonts that take ages to load and some 3D web graphics to show that "I'm not like the others"? I don't do that. I make websites that <strong>just work</strong>  and <strong>saves people time.</strong>. <br> Want fancy websites? I still make them, check them out on my GitHub 
+</section>
+
+    <!-- <section id="my-programming-projects">
+
+      <h2>
+        Or gaze in awe at my projects
+      </h2>
+      <div class="grid">
+        <article>
+          <header>
+            <h3>JCourses</h3>
+          </header>
+          Django + React Web App for NTUT courses
+          <footer>
+            <div role="group">
+
+              <a class="button" href="https://jcourses.lostmypillow.duckdns.org/" target="_blank"
+                rel="noopener noreferrer" role="button">
+                Demo
+              </a>
+              <a href="https://github.com/lostmypillow/jcourses" target="_blank" rel="noopener noreferrer" role="button"
+                class="secondary">
+                GitHub
+              </a>
+            </div>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h3>JRAR</h3>
+          </header>
+
+          <strong>Django</strong> + <strong>React</strong> Web App for RPi | Arduino | RFID Project
+          <footer>
+            <div role="group">
+
+              <a class="button" href="https://jrar.lostmypillow.duckdns.org/" target="_blank" rel="noopener noreferrer"
+                role="button">
+                Demo
+              </a>
+
+
+              <a href="https://github.com/lostmypillow/jrar" target="_blank" rel="noopener noreferrer" role="button"
+                class="secondary">
+                GitHub
+              </a>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h3>JSearch</h3>
+          </header>
+          Search frontend for OMDb API and an unofficial Google API
+          <footer>
+            <div role="group">
+
+              <a class="button" href="https://jsearch.lostmypillow.duckdns.org/" target="_blank"
+                rel="noopener noreferrer" role="button">
+                Demo
+              </a>
+
+
+              <a href="https://github.com/lostmypillow/jsearch/" target="_blank" rel="noopener noreferrer" role="button"
+                class="secondary">
+                GitHub
+              </a>
+          </footer>
+        </article>
       </div>
 
 
-    </section>
+      <div class="grid">
+        <article>
+          <header>
+            <h3>JQuotes</h3>
+          </header>
+          Random quote generator
+          <footer>
+            <div role="group">
 
-    <section id="who-am-i">
-      <!-- <h2>Who am I?</h2>
-
-      <ul>
-        <li>
-          I'm <b>Johnny Lin</b>, aka LostMyPillow. I'm a self-taught web dev, building <b>Django (Python)</b> and
-          <b>FastAPI (Python)</b> web apps
-          that serve <b>React/Vue</b> frontends. I
-          self-host those sites on my RPi 3B+ with <b>Docker containers</b>, including this very site.
-        </li>
-
-        <li>I'm learning <b>Java</b> for future Spring Boot projects, <b>PHP</b> for Laravel projects and <b>Expo (React
-            Native)</b> for my foray into cross-platform mobile app development.
-        </li>
-
-        <li>I like to do some light <b>video editing</b> in my spare time.</li> -->
-
-      </ul>
-
-    </section>
-
-    <section id="my-programming-projects">
-
-      <h2>
-        My Programming Projects
-      </h2>
-
-      <article>
-        <header>
-          <h3>JCourses</h3>
-        </header>
-        (missing frontend) Django + React Web App for NTUT courses
-        <footer>
-          <div role="group">
-
-            <a class="button" href="https://jcourses.lostmypillow.duckdns.org/" target="_blank"
-              rel="noopener noreferrer" role="button">
-              Demo
-            </a>
-            <a href="https://github.com/lostmypillow/jcourses" target="_blank" rel="noopener noreferrer" role="button"
-              class="secondary">
-              GitHub
-            </a>
-        </footer>
-      </article>
-
-      <article>
-        <header>
-          <h3>JRAR</h3>
-        </header>
-        (add demo video instead here and on GitHub)
-        <strong>Django</strong> + <strong>React</strong> Web App for RPi | Arduino | RFID Project
-        <footer>
-          <div role="group">
-
-            <a class="button" href="https://jrar.lostmypillow.duckdns.org/" target="_blank" rel="noopener noreferrer"
-              role="button">
-              Demo
-            </a>
+              <a class="button" href="" target="_blank" rel="noopener noreferrer" role="button" disabled>
+                WIP
+              </a>
 
 
-            <a href="https://github.com/lostmypillow/jrar" target="_blank" rel="noopener noreferrer" role="button"
-              class="secondary">
-              GitHub
-            </a>
-        </footer>
-      </article>
+              <a href="https://github.com/lostmypillow/jquotes/" target="_blank" rel="noopener noreferrer" role="button"
+                class="secondary">
+                GitHub
+              </a>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h3>Dancing Goats</h3>
+          </header>
+          Website for a local coffee shop
+          <footer>
+            <div role="group">
 
-      <article>
-        <header>
-          <h3>JSearch</h3>
-        </header>
-        (cosnolidate files and build process to monorepo) Search frontend for OMDb API and an unofficial Google API
-        <footer>
-          <div role="group">
-
-            <a class="button" href="https://jsearch.lostmypillow.duckdns.org/" target="_blank" rel="noopener noreferrer"
-              role="button">
-              Demo
-            </a>
-
-
-            <a href="https://github.com/lostmypillow/jsearch/" target="_blank" rel="noopener noreferrer" role="button"
-              class="secondary">
-              GitHub
-            </a>
-        </footer>
-      </article>
-
-      <article>
-        <header>
-          <h3>JQuotes</h3>
-        </header>
-        (finish ExpressJS backend + auth) Random quote generator
-        <footer>
-          <div role="group">
-
-            <a class="button" href="" target="_blank" rel="noopener noreferrer" role="button" disabled>
-              WIP
-            </a>
+              <a class="button" href="https://dancinggoats.pages.dev/" target="_blank" rel="noopener noreferrer"
+                role="button">
+                Demo
+              </a>
 
 
-            <a href="https://github.com/lostmypillow/jquotes/" target="_blank" rel="noopener noreferrer" role="button"
-              class="secondary">
-              GitHub
-            </a>
-        </footer>
-      </article>
+              <a href="https://github.com/lostmypillow/dancinggoats" target="_blank" rel="noopener noreferrer"
+                role="button" class="secondary">
+                GitHub
+              </a>
+            </div>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h3>JZuvio</h3>
+          </header>
+          Planned remake of Zuvio
+          <footer>
+            <div role="group">
 
-      <article>
-        <header>
-          <h3>Dancing Goats (WIP)</h3>
-        </header>
-        (fix size problem) Website for a local coffee shop
-        <footer>
-          <div role="group">
-
-            <a class="button" href="https://dancinggoats.pages.dev/" target="_blank" rel="noopener noreferrer"
-              role="button">
-              Demo
-            </a>
-
-
-            <a href="https://github.com/lostmypillow/dancinggoats" target="_blank" rel="noopener noreferrer"
-              role="button" class="secondary">
-              GitHub
-            </a>
-        </footer>
-      </article>
-
-      <article>
-        <header>
-          <h3>JZuvio</h3>
-        </header>
-        Planned remake of Zuvio
-        <footer>
-          <div role="group">
-(make a MVP ver frontend with Vue and Vuetify)
-            <a class="button" href="" target="_blank" rel="noopener noreferrer" role="button" disabled>
-              WIP
-            </a>
+              <a class="button" href="" target="_blank" rel="noopener noreferrer" role="button" disabled>
+                WIP
+              </a>
 
 
-            <a href="" target="_blank" rel="noopener noreferrer" role="button" class="secondary" disabled>
-              WIP
-            </a>
-        </footer>
-      </article>
+              <a href="" target="_blank" rel="noopener noreferrer" role="button" class="secondary" disabled>
+                WIP
+              </a>
+          </footer>
+        </article>
+      </div>
 
 
-    </section>
+
+
+
+
+
+
+
+
+    </section> -->
 
 
 
