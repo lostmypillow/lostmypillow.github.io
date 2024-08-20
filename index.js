@@ -21,9 +21,4 @@ console.log(html)
 }
 }
 
-
-
-
-
-
 await getHTML()
