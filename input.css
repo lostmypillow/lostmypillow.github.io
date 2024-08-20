@@ -5,3 +5,31 @@
 :root {
     font-family: sans-serif;
 }
+a {
+    color: #1d4ed8; /* Default link color, adjust as needed */
+    text-decoration: underline; /* Default link decoration */
+    /* Add any other styles you need */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Ensure hover state is styled */
+  }
+
+  ul, ol {
+    margin: 1em 0; /* Adjust margin as needed */
+    padding: 0 0 0 2em; /* Default padding to align list items */
+  }
+  
+  ul {
+    list-style-type: disc; /* Default style for unordered lists */
+  }
+  
+  ol {
+    list-style-type: decimal; /* Default style for ordered lists */
+  }
+  
+  li {
+    margin-bottom: 0.5em; /* Optional: add space between list items */
+  }
+  
+  

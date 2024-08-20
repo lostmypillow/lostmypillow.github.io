@@ -16,118 +16,72 @@
   <title>LostMyPillow</title>
 </head>
 
-<body>
-  <main class="h-svh">
-    <div class="navbar bg-base-100 w-svw h-11">
-      <div class="navbar-start">
+<body class="min-h-svh max-w-svw">
+  <main  hx-trigger="load" hx-get="pages/about.html" hx-target="#content" hx-swap="innerHTML">
+
+
+    <div class="navbar bg-base-100 w-full h-11 flex flex-wrap">
+      <!-- nav bar left -->
+
+      <div class="navbar-start w-fit">
         <a class="btn btn-ghost text-2xl">
           <strong>Lost My Pillow</strong>
         </a>
       </div>
-      <div class="navbar-center hidden md:flex">
+
+      <!--  -->
+
+
+      <!-- navbar center -->
+      <div class="navbar-center order-last md:order-none w-fit">
         <ul class="menu menu-horizontal px-1">
-          <li> <button hx-trigger="click" hx-get="about.html" hx-target="#content" hx-swap="innerHTML">About Me</button>
-          </li>
           <li>
-            <details>
-              <summary>Projects</summary>
-              <ul class="p-2">
-                <li><a>Code</a></li>
-                <li><a>Videos</a></li>
-              </ul>
-            </details>
+            <button hx-trigger="click" hx-get="pages/about.html" hx-target="#content" hx-swap="innerHTML">
+              About Me
+            </button>
           </li>
-          <li><a>GitHub<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+
+          <li>
+            <button hx-trigger="click" hx-get="pages/projects.html" hx-target="#content" hx-swap="innerHTML">
+              Projects
+            </button>
+          </li>
+
+          <li>
+            <a href="https://github.com/lostmypillow" target="_blank" rel="noopener noreferrer">GitHub<svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="feather feather-external-link">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15 3 21 3 21 9"></polyline>
                 <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg></a> </li>
+              </svg></a>
+          </li>
         </ul>
       </div>
-      <div class="navbar-end gap-4">
+      <!--  -->
 
-        <!-- <span class="hidden lg:block">Dark Mode</span> -->
-        <button id="mobile-toggle" class="lg:hidden btn"></button>
-        <!-- <input id="desktop-toggle" type="checkbox" class="toggle hidden lg:block"  /> -->
-      </div>
-    </div>
-    <!-- <div role="tablist" class="tabs tabs-lifted ">
-      <input type="radio" name="my_tabs_2" role="tab" class="tab text-lg bg-gray-200" aria-label="About Me" />
-      <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 bg-gray-200">
-        Tab content 1
+
+      <!-- navbar end -->
+      <div class=" ml-auto gap-4 lg:order-last">
+        <button id="mobile-toggle" class="btn"></button>
+
       </div>
 
-      <input type="radio" name="my_tabs_2" role="tab" class="tab text-lg" aria-label="Apps/Projects" checked="checked" />
-      <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-        Tab content 2
-      </div>
 
-      <input type="radio" name="my_tabs_2" role="tab" class="tab text-lg" aria-label="Hire Me" />
-      <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
-        Tab content 3
-      </div>
-    </div> -->
-
-    <div id="content" class="px-6">
-
+      <!--  -->
     </div>
 
 
+    <div id="content" class="px-6 pt-12 md:pt-4 max-w-svw">
 
+    </div>
 
   </main>
 
 
-  <!-- <div class="btm-nav md:hidden">
-      <button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-        </svg>
-        <span class="btm-nav-label">Home</span>
-      </button>
-      <button class="active">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        <span class="btm-nav-label">Warnings</span>
-      </button>
-      <button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-        </svg>
-        <span class="btm-nav-label">Statics</span>
-      </button>
-    </div> -->
-  <script src="index.js"></script>
+
+  <script type="module" src="index.js"></script>
 </body>
 
 </html>
