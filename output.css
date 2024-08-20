@@ -973,15 +973,6 @@ html {
   align-items: center;
 }
 
-.navbar-start {
-  width: 50%;
-  justify-content: flex-start;
-}
-
-.navbar-center {
-  flex-shrink: 0;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .btn {
     animation: button-pop var(--animation-btn, 0.25s) ease-out;
@@ -1302,50 +1293,30 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.order-last {
-  order: 9999;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.flex {
-  display: flex;
-}
-
-.h-11 {
-  height: 2.75rem;
-}
-
 .min-h-svh {
   min-height: 100svh;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.flex-1 {
+  flex: 1 1 0%;
 }
 
-.w-svw {
-  width: 100svw;
+.flex-none {
+  flex: none;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.gap-4 {
-  gap: 1rem;
+.rounded-t-none {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .bg-base-100 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-1 {
@@ -1358,20 +1329,16 @@ html {
   padding-right: 1.5rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 :root {
   font-family: sans-serif;
 }
 
-a {
+#content a {
   color: #1d4ed8;
   /* Default link color, adjust as needed */
   text-decoration: underline;
@@ -1384,42 +1351,25 @@ a:hover {
   /* Ensure hover state is styled */
 }
 
-ul, ol {
+#content  ul, ol {
   margin: 1em 0;
   /* Adjust margin as needed */
   padding: 0 0 0 2em;
   /* Default padding to align list items */
 }
 
-ul {
+#content  ul {
   list-style-type: disc;
   /* Default style for unordered lists */
 }
 
-ol {
+#content  ol {
   list-style-type: decimal;
   /* Default style for ordered lists */
 }
 
-li {
+#content  li {
   margin-bottom: 0.5em;
   /* Optional: add space between list items */
 }
 
-@media (min-width: 768px) {
-  .md\:order-none {
-    order: 0;
-  }
-
-  .md\:pt-4 {
-    padding-top: 1rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:order-last {
-    order: 9999;
-  }
-}
-  
-  
