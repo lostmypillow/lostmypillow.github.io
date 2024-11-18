@@ -13,10 +13,10 @@ import { saveAs } from "file-saver";
 </script>
 
 <template>
-  <RedButton @click="router.push('/who-am-i')">
+  <RedButton @click="router.push('/whoami')">
     <UserSVG /> Who am I?
   </RedButton>
-  <RedButton @click="router.push('/what-im-working-on')">
+  <RedButton @click="router.push('/projects')">
     <HelpSVG />
     What am I working on?
   </RedButton>

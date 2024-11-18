@@ -3,12 +3,12 @@ import './style.css'
 import App from './App.vue'
 import { createRouter, createWebHistory} from 'vue-router'
 import Home from './pages/Home.vue'
-import WhatImWorking from './pages/WhatImWorking.vue'
+import Projects from './pages/Projects.vue'
 import WhoAmI from './pages/WhoAmI.vue'
 const routes = [
     { path: '/', component: Home },
-    { path: '/who-am-i', component: WhoAmI },
-    {path: '/what-im-working-on', component: WhatImWorking}
+    { path: '/whoami', component: WhoAmI },
+    {path: '/projects', component: Projects}
   ]
   const router = createRouter({
     history: createWebHistory(),
