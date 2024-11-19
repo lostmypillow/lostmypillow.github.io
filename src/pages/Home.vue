@@ -14,11 +14,11 @@ import { saveAs } from "file-saver";
 
 <template>
   <RedButton @click="router.push('/whoami')">
-    <UserSVG /> Who am I?
+    <UserSVG /> Learn About Me
   </RedButton>
   <RedButton @click="router.push('/projects')">
     <HelpSVG />
-    What am I working on?
+    See My Projects
   </RedButton>
   <RedButton>
     <GitHubSVG />
@@ -30,17 +30,10 @@ import { saveAs } from "file-saver";
       Visit My GitHub
     </a>
   </RedButton>
-  <RedButton @click="showDLBtns = !showDLBtns">
+  <RedButton @click="router.push('/resumes')">
     <DownloadSVG />
-    Download My Resume
+    Get My Resume
   </RedButton>
 
-  <SecondButton v-show="showDLBtns" @click="saveAs('/Resume_ZH.pdf')">
-    <span> 中 </span>
-    中文履歷
-  </SecondButton>
-  <SecondButton v-show="showDLBtns" @click="saveAs('/Resume.pdf')">
-    <span> en </span>
-    English Resume
-  </SecondButton>
+  
 </template>
