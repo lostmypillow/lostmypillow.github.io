@@ -1,7 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import "tailwindcss";
 @font-face {
   font-family: 'Iosevka Aile';
   src:local("IosevkaAile-Regular"), url('./assets/fonts/IosevkaAile/IosevkaAile-Regular.woff2');
