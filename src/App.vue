@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { RouterView } from "vue-router";
 import { useRouter } from "vue-router";
 import BackSVG from "./components/svg/BackSVG.vue";

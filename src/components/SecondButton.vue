@@ -1,10 +1,7 @@
 <template>
-    <div
+  <div class="btn btn-secondary flex justify-between w-48">
+    <slot>
 
-  class="btn btn-secondary flex justify-between w-48"
->
-<slot>
-
-</slot>
-</div>
+    </slot>
+  </div>
 </template>
