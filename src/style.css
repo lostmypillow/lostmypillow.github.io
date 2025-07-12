@@ -1,14 +1,100 @@
 @import "tailwindcss";
-@font-face {
-  font-family: 'Iosevka Aile';
-  src:local("IosevkaAile-Regular"), url('./assets/fonts/IosevkaAile/IosevkaAile-Regular.woff2');
-}
 
+/* Sarasa UI TC */
 @font-face {
-  font-family: OverusedGrotesk;
-  src: local("OverusedGrotesk-Roman"), url('./assets/fonts/OveerusedGrotesk/OverusedGroteskRoman-VF.woff2');
+  font-family: "Sarasa UI TC";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./assets/fonts/SarasaUiTC-ExtraLight.woff2") format("woff2"),
+    url("./assets/fonts/SarasaUiTC-ExtraLight.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarasa UI TC";
+  font-style: italic;
+  font-weight: 200;
+  src: url("./assets/fonts/SarasaUiTC-ExtraLightItalic.woff2") format("woff2"),
+    url("./assets/fonts/SarasaUiTC-ExtraLightItalic.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarasa UI TC";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/SarasaUiTC-Light.woff2") format("woff2"),
+    url("./assets/fonts/SarasaUiTC-Light.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarasa UI TC";
+  font-style: italic;
+  font-weight: 300;
+  src: url("./assets/fonts/SarasaUiTC-LightItalic.woff2") format("woff2"),
+    url("./assets/fonts/SarasaUiTC-LightItalic.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarasa UI TC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/SarasaUiTC-Regular.woff2") format("woff2"),
+    url("./assets/fonts/SarasaUiTC-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarasa UI TC";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./assets/fonts/SarasaUiTC-Italic.woff2") format("woff2"),
+    url("./assets/fonts/SarasaUiTC-Italic.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarasa UI TC";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/SarasaUiTC-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/SarasaUiTC-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarasa UI TC";
+  font-style: italic;
+  font-weight: 600;
+  src: url("./assets/fonts/SarasaUiTC-SemiBoldItalic.woff2") format("woff2"),
+    url("./assets/fonts/SarasaUiTC-SemiBoldItalic.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarasa UI TC";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/SarasaUiTC-Bold.woff2") format("woff2"),
+    url("./assets/fonts/SarasaUiTC-Bold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarasa UI TC";
+  font-style: italic;
+  font-weight: 700;
+  src: url("./assets/fonts/SarasaUiTC-BoldItalic.woff") format("woff2"),
+    url("./assets/fonts/SarasaUiTC-BoldItalic.woff") format("woff");
+  font-display: swap;
 }
 
 :root {
-  font-family: OverusedGrotesk ,'Iosevka Aile', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Sarasa UI TC", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* src/assets/main.css or a global CSS file */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure html and body also take full height */
+  width: 100%;  /* Ensure html and body also take full width */
+  overflow-x: hidden; /* Prevent horizontal scroll if content overflows */
+}
+
+/* Optional: Set a min-height on #app if your Vue app mounts directly to it */
+#app {
+  min-height: 100%;
 }
