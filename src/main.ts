@@ -1,27 +1,12 @@
 import { createApp } from "vue";
 import "./style.css";
-import 'primeicons/primeicons.css'
-
+import "primeicons/primeicons.css";
 import App from "./App.vue";
-import { createRouter, createWebHistory } from "vue-router";
-import Home from "./pages/Home.vue";
-import Projects from "./pages/Projects.vue";
-import WhoAmI from "./pages/About.vue";
+import { router } from "./router";
 import { definePreset } from "@primeuix/themes";
 import PrimeVue from "primevue/config";
 import Lara from "@primeuix/themes/lara";
-import Resumes from "./pages/Resumes.vue";
-import About from "./pages/About.vue";
-const routes = [
-  { path: "/", component: Home },
-  { path: "/about", component: About },
-  { path: "/projects", component: Projects },
-  { path: "/resumes", component: Resumes },
-];
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-});
+
 const MyPreset = definePreset(Lara, {
   semantic: {
     primary: {

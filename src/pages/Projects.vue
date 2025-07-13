@@ -1,13 +1,20 @@
 <script setup lang="ts">
-import { useRouter } from "vue-router";
-import RedButton from "../components/RedButton.vue";
-import BackSVG from "../components/svg/BackSVG.vue";
-const router = useRouter();
+import ProjectCard from '../components/ProjectCard.vue';
+
+const projectList = [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,9
+  ,
+]
 </script>
 <template>
-
-  <article class="prose text-center">
-    <h2>Projects</h2>
-    Oops I'm not done with this section yet!
-  </article>
+<div class="flex flex-row flex-wrap items-center justify-between gap-6">
+<ProjectCard v-for="project in projectList" />
+</div>
 </template>
