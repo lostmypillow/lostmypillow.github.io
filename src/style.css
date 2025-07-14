@@ -95,6 +95,6 @@ html, body {
 }
 
 /* Optional: Set a min-height on #app if your Vue app mounts directly to it */
-#app {
+html, body, #app {
   min-height: 100%;
 }

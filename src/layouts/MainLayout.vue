@@ -7,7 +7,7 @@ const router = useRouter();
 
 <template>
   <main
-    class="flex flex-col gap-4 items-start justify-between min-h-screen w-screen bg-red-200 py-6 px-6"
+    class="flex flex-col gap-4 items-start justify-start min-h-screen w-screen bg-red-200 py-6 px-6"
   >
     <Toolbar
       class="w-full backdrop-blur-2xl"
@@ -19,9 +19,9 @@ const router = useRouter();
     >
       <template #start>
         <div class="flex flex-row items-center justify-start gap-4">
-          <Avatar image="/icon.webp" shape="circle" size="large" />
+          <Avatar @click="router.push('/')" image="/icon.webp" shape="circle" size="large" />
 
-          <h1 class="font-extrabold text-4xl">林家民</h1>
+          <h1 @click="router.push('/')" class="font-extrabold text-4xl">林家民</h1>
         </div>
       </template>
       <template #end>
@@ -65,7 +65,7 @@ const router = useRouter();
         </div>
       </template>
     </Toolbar>
-    <div class="h-full">
+    <div class="flex items-start justify-start h-full w-full">
       <slot></slot>
     </div>
   </main>

@@ -1,19 +1,83 @@
+<!-- eslint-disable vue/valid-v-for -->
+<script setup lang="ts">
+import AkarIconsVueFill from "~icons/akar-icons/vue-fill";
+import AkarIconsPythonFill from "~icons/akar-icons/python-fill";
+defineProps({
+  title: {
+    type: String,
+    default: "Default Title",
+  },
+  subtitle: {
+    type: String,
+    default: "Default Subtitle",
+  },
+  content: {
+    type: String,
+    default: "Default Content",
+  },
+  showDemo: {
+    type: Boolean,
+  },
+  demoLink: {
+    type: String,
+    default: "https://chodansbawige.com",
+  },
+  showGithub: {
+    type: Boolean,
+  },
+  githubLink: {
+    type: String,
+    default: "https://github.com",
+  },
+  techStack: {
+    type: Array,
+    default: [],
+  },
+});
+</script>
 <template>
-     <Card style="width: 25rem; overflow: hidden">
-   
-        <template #title>Advanced Card</template>
-        <template #subtitle>Card subtitle</template>
-        <template #content>
-            <p class="m-0">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                quas!
-            </p>
-        </template>
-        <template #footer>
-            <div class="flex gap-4 mt-1">
-                <Button label="Cancel" severity="secondary" outlined class="w-full" />
-                <Button label="Save" class="w-full" />
-            </div>
-        </template>
-    </Card>
+  <Card style="width: 25rem; overflow: hidden">
+    <template #title>{{ title }}</template>
+    <template #subtitle>{{ subtitle }}</template>
+    <template #content>
+      <div v-if="techStack.length > 0" class="flex flex-row gap-4">
+        <Chip v-for="tech in techStack" :label="tech">
+          <template #icon>
+            <AkarIconsVueFill v-if="tech == 'Vue'" />
+            <AkarIconsPythonFill v-if="tech == 'FastAPI'" />
+          </template>
+        </Chip>
+      </div>
+
+      <div class="m-0" v-html="content"></div>
+    </template>
+    <template #footer>
+      <div class="flex gap-4 mt-1">
+        <Button
+          v-if="showGithub"
+          rounded
+          as="a"
+          :href="githubLink"
+          target="_blank"
+          rel="noopener"
+          icon="pi pi-github"
+          label="GitHub"
+          severity="secondary"
+          outlined
+          class="w-full"
+        />
+        <Button
+          v-if="showDemo"
+          rounded
+          icon="pi pi-external-link"
+          label="Demo"
+          class="w-full"
+          as="a"
+          :href="demoLink"
+          target="_blank"
+          rel="noopener"
+        />
+      </div>
+    </template>
+  </Card>
 </template>
