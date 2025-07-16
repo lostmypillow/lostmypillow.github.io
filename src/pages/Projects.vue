@@ -1,13 +1,23 @@
-<script setup>
-import { useRouter } from "vue-router";
-import RedButton from "../components/RedButton.vue";
-import BackSVG from "../components/svg/BackSVG.vue";
-const router = useRouter();
+<script setup lang="ts">
+import ProjectCard from "../components/ProjectCard.vue";
+import projects from "../projects.json"
+
 </script>
 <template>
-
-  <article class="prose text-center">
-    <h2>Projects</h2>
-    Oops I'm not done with this section yet!
-  </article>
+  <div
+    class="flex flex-row flex-wrap items-start w-full justify-start gap-8 pt-6"
+  >
+    <ProjectCard
+      v-for="(project, index) in projects"
+      :key="index"
+      :title="project.title"
+      :subtitle="project.subtitle"
+      :content="project.content"
+      :show-demo="project.showDemo"
+      :demo-link="project.demoLink"
+      :show-github="project.showGithub"
+      :github-link="project.githubLink"
+      :tech-stack="project.techStack"
+    />
+  </div>
 </template>

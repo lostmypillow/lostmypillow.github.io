@@ -1,0 +1,154 @@
+[
+  {
+    "title": "AutoDMS",
+    "subtitle": "每日新聞摘要自動化",
+    "content": "<ul><li>- 由 Vue 寫的Chrome 擴充元件 + JS寫的 Firebase Functions + LINE chatbot組成的專案</li><li>- 製作每日新聞監測，規則多但是固定，因此想做這個project</li><li>- 新聞連結給LINE chatbot, chatbot傳給Firebase Functions 處理</li><li>- Firebase Functions 根據爬蟲難易度,會自行先爬蟲或是交給 Chrome 擴充元件爬，資料最後存至 Firestore</li><li>- 擴充元件則負責換順序，編輯文字，以及整理輸出成固定格式 Word 檔<li><li>- 此專案為我自行開始，自己構想，自己的Code, 細節才可以寫這麼多</li><li>- Documentation: <a href='https://dms-docs.pages.dev' target='_blank' rel='noopener'>https://dms-docs.pages.dev</a></ul>",
+    "showDemo": true,
+    "demoLink": "https://chromewebstore.google.com/detail/autodms/aemgieopgpcjapdcdlcaajhbnkbnjmii",
+    "showGithub": true,
+    "githubLink": "https://github.com/lostmypillow/autodms-ext",
+    "techStack": ["Vue", "JavaScript"]
+  },
+  {
+    "title": "tutor",
+    "subtitle": "輔導老師系統",
+    "content": "<ul><li>- 包含 Vue 前端與 FastAPI 後端。</li><li>- 提供大型電視顯示介面，用於顯示哪些座位有導師、他們的姓名與照片，並透過專用的 GUI (tutor-gui) 在 Raspberry Pi 上以 WebSocket 即時更新。</li><li>- 左下角包含自動播放的影片播放器，右下角為公告輪播區。</li><li>- 導師專屬頁面可用來更新照片與個人資訊。</li></ul><br /><i>因程式碼屬公司機密，恕不提供repo和demo</i>",
+    "showDemo": false,
+    "demoLink": "",
+    "showGithub": false,
+    "githubLink": "",
+    "techStack": ["Vue", "FastAPI"]
+  },
+  {
+    "title": "tutor-gui",
+    "subtitle": "數輔刷卡GUI",
+    "content": "<ul><li>- 使用 PySide6（Python Qt6 綁定）架構開發。</li><li>- 使用 pyside6-deploy 建構 binary。</li><li>- 在Raspberry Pi 上透過 Ansible 設定為開機自動啟動。</li></ul><br /><i>因程式碼屬公司機密，恕不提供repo和demo</i>",
+    "showDemo": false,
+    "demoLink": "",
+    "showGithub": false,
+    "githubLink": "",
+    "techStack": ["PySide6", "Qt6"]
+  },
+  {
+    "title": "touch",
+    "subtitle": "補位系統",
+    "content": "<ul><li>- 包含 Vue (TypeScript) 前端與 FastAPI (Python) 後端。</li><li>- 部署於Windows Kiosk + Chrome Kiosk，供學生操作使用。</li><li>- 頂部狀態橫幅利用Websocket顯示最新與即將開始的課程，以及可補位的課程。</li><li>- 中間區域提供補位、獎學金申請與滿意度調查等功能。</li><li>- 底部設有自動播放的影片播放器。</li><li>- 目前為學生幾乎每天固定使用之系統</li></ul><br /><i>因程式碼屬公司機密，恕不提供repo和demo</i>",
+    "showDemo": false,
+    "demoLink": "",
+    "showGithub": false,
+    "githubLink": "",
+    "techStack": ["Vue", "FastAPI"]
+  },
+  {
+    "title": "sms",
+    "subtitle": "簡訊系統",
+    "content": "<ul><li>- 採用 FastAPI 後端並配備多個 worker。</li><li>- 目前為內部系統簡訊派送之重要環節。</li></ul><br /><i>因程式碼屬公司機密，恕不提供repo和demo</i>",
+    "showDemo": false,
+    "demoLink": "",
+    "showGithub": false,
+    "githubLink": "",
+    "techStack": ["FastAPI"]
+  },
+  {
+    "title": "media",
+    "subtitle": "媒體系統",
+    "content": "<ul><li>- FastAPI 後端，配備多個 worker。</li><li>- 作為圖片的CDN。</li><li>同時提供影片上傳、刪除、管理及同步的端點。</li><li>-為 tutor 和 touch 下載影片 (實際透過 Caddy 代理服務)。</li></ul><br /><i>因程式碼屬公司機密，恕不提供repo和demo</i>",
+    "showDemo": false,
+    "demoLink": "",
+    "showGithub": false,
+    "githubLink": "",
+    "techStack": ["FastAPI"]
+  },
+  {
+    "title": "vm",
+    "subtitle": "高偉虛擬機系統",
+    "content": "<ul><li>- 基於 FastAPI 的後端</li><li>- 支援 VM 設定檔 的建立、編輯與擷取功能。</li><li>- 提供remote-viewer的 VV 檔案。<li>- 用於 Proxmox 及內部非 Proxmox 虛擬機。</li><li>- vm-gui 為使用端，internal-system 則有虛擬機管理功能。</li></ul><br /><i>因程式碼屬公司機密，恕不提供repo和demo</i>",
+    "showDemo": false,
+    "demoLink": "",
+    "showGithub": false,
+    "githubLink": "",
+    "techStack": ["FastAPI"]
+  },
+  {
+    "title": "vm-gui",
+    "subtitle": "虛擬機GUI",
+    "content": "<ul><li>- 使用 PySide6（Python Qt6 綁定）架構開發。</li><li>- 使用 pyside6-deploy 建構 binary。</li><li>- 可供員工簡單開啟自己的虛擬機電腦。</li><li>- 整合在一個客製化 Debian ISO裡，供USB開機 live system。</li></ul><br /><i>因程式碼屬公司機密，恕不提供repo和demo</i>",
+    "showDemo": false,
+    "demoLink": "",
+    "showGithub": false,
+    "githubLink": "",
+    "techStack": ["PySide6", "Qt6"]
+  },
+  {
+    "title": "trials",
+    "subtitle": "試聽管理",
+    "content": "<ul><li>- 基於 FastAPI 的後端</li><li>- 供員工查看試聽學生資料及狀態</li></ul><br /><i>因程式碼屬公司機密，恕不提供repo和demo</i>",
+    "showDemo": false,
+    "demoLink": "",
+    "showGithub": false,
+    "githubLink": "",
+    "techStack": ["FastAPI"]
+  },
+  {
+    "title": "login",
+    "subtitle": "登入系統",
+    "content": "<ul><li>- 供內部系統登入用<li><li>用 caddy 和 step-ca 啟用HTTPS</li><li>- 用JWT認證</li></li></ul><br /><i>因程式碼屬公司機密，恕不提供repo和demo</i>",
+    "showDemo": false,
+    "demoLink": "",
+    "showGithub": false,
+    "githubLink": "",
+    "techStack": ["FastAPI"]
+  },
+  {
+    "title": "kw-internal-system",
+    "subtitle": "內部系統",
+    "content": "<ul><li>- 包含 Vue前端 和多個 FastAPI 後端(為分散風險)<li>- 整合試聽課程、虛擬機管理、簡訊發送、即時課程資訊，以及登入(JWT)系統。</li></ul><br /><i>因程式碼屬公司機密，恕不提供repo和demo</i>",
+    "showDemo": false,
+    "demoLink": "",
+    "showGithub": false,
+    "githubLink": "",
+    "techStack": ["Vue"]
+  },
+  {
+    "title": "jsearch",
+    "subtitle": "搜尋",
+    "content": "<ul><li>- 包含 Nuxt(Vue) 前端和 FastAPI 後端</li><li>- FastAPI 後端在搜尋電影時呼叫 OMDb API ，搜尋 Google 時呼叫 RapidAPI</li><li>- <b>後端在Render免費版上跑，啟動(cold start)會需要一點時間，敬請見諒～</b></li></ul>",
+    "showDemo": true,
+    "demoLink": "https://jsearch.pages.dev",
+    "showGithub": true,
+    "githubLink": "https://github.com/lostmypillow/jsearch",
+    "techStack": ["Nuxt", "FastAPI"]
+  },
+  {
+    "title": "jRAR",
+    "subtitle": "RASPBERRY PI | ARDUINO | RFID CLIENT + SERVER",
+    "content": "<ul><li>- 使用 React 和 MUI 元件做前端，可對後端執行 CRUD 操作並取得請求數量。</li><li>- 使用 Django 和 SQLite 做出 REST API 端點。</li><li>- 除了前端之外，Raspberry Pi 400 還可以對後端發送和取得數據。</li><li>- Django 後端可變Docker container在我個人的 Raspberry Pi 3B+ 或 Render (目前的平台) 上跑</li><li>- 前端部署在 Cloudflare Pages.</li><li>- <b>後端在Render免費版上跑，啟動(cold start)會需要一點時間，敬請見諒～</b></li></ul>",
+    "showDemo": true,
+    "demoLink": "https://jrar.pages.dev",
+    "showGithub": true,
+    "githubLink": "https://github.com/lostmypillow/jrar",
+    "techStack": ["Django", "React"]
+  },
+  {
+    "title": "leospen",
+    "subtitle": "華爾街之狼電影台詞網站",
+    "content": "<ul><li>- 此為半搞笑用途，一半為之後要做的電商demo做準備。</li><li>- 使用 NextJS (React)。</li><li>- 由於做搞笑用途居多，功能不完全，敬請見諒～</b></li></ul>",
+    "showDemo": true,
+    "demoLink": "https://leospen.pages.dev/",
+    "showGithub": true,
+    "githubLink": "https://github.com/lostmypillow/leospen",
+    "techStack": ["NextJS", "React"]
+
+  },
+  {
+    "title": "printerium",
+    "subtitle": "為同學報告寫的商品網站",
+    "content": "<ul><li>- 此為半搞笑用途，一半為之後要做的電商demo做準備。</li><li>- 使用 NextJS (React)。</li><li>- 由於做搞笑用途居多，功能不完全，敬請見諒～</b></li></ul>",
+    "showDemo": true,
+    "demoLink": "https://printerium.pages.dev/",
+    "showGithub": true,
+    "githubLink": "https://github.com/lostmypillow/printerium",
+    "techStack": ["NextJS", "React"]
+
+  }
+]

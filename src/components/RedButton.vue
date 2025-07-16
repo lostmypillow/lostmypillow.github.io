@@ -1,10 +1,7 @@
 <template>
-      <div
+  <div class="btn btn-primary flex justify-between w-60">
+    <slot>
 
-    class="btn btn-primary flex justify-between w-60"
-  >
-  <slot>
-
-  </slot>
+    </slot>
   </div>
 </template>
