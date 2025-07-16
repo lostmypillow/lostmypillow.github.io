@@ -1,7 +1,10 @@
-<!-- eslint-disable vue/valid-v-for -->
 <script setup lang="ts">
 import AkarIconsVueFill from "~icons/akar-icons/vue-fill";
 import AkarIconsPythonFill from "~icons/akar-icons/python-fill";
+import AkarIconsNextjsFill from '~icons/akar-icons/nextjs-fill';
+import AkarIconsReactFill from '~icons/akar-icons/react-fill';
+import AkarIconsDjangoFill from '~icons/akar-icons/django-fill';
+import AkarIconsJavascriptFill from '~icons/akar-icons/javascript-fill';
 defineProps({
   title: {
     type: String,
@@ -40,14 +43,20 @@ defineProps({
     <template #title>{{ title }}</template>
     <template #subtitle>{{ subtitle }}</template>
     <template #content>
-      <div v-if="techStack.length > 0" class="flex flex-row gap-4">
+      <div v-if="techStack.length > 0" class="flex flex-row gap-4 my-2">
+
         <Chip v-for="tech in techStack" :label="tech">
           <template #icon>
-            <AkarIconsVueFill v-if="tech == 'Vue'" />
-            <AkarIconsPythonFill v-if="tech == 'FastAPI'" />
+            <AkarIconsVueFill v-if="tech == 'Vue' || tech == 'Nuxt'" />
+            <AkarIconsPythonFill v-if="tech == 'FastAPI' || tech=='Qt6' || tech=='PySide6'" />
+            <AkarIconsNextjsFill v-if="tech == 'NextJS'" />
+            <AkarIconsReactFill v-if="tech== 'React'" />
+            <AkarIconsDjangoFill v-if="tech == 'Django'" />
+            <AkarIconsJavascriptFill v-if="tech == 'JavaScript'" />
           </template>
         </Chip>
       </div>
+
 
       <div class="m-0" v-html="content"></div>
     </template>

@@ -18,31 +18,39 @@ const router = useRouter();
       "
     >
       <template #start>
-        <div class="flex flex-row items-center justify-start gap-4">
-          <Avatar @click="router.push('/')" image="/icon.webp" shape="circle" size="large" />
-
-          <h1 @click="router.push('/')" class="font-extrabold text-4xl">林家民</h1>
-        </div>
+        <div class="flex flex-row items-center justify-center gap-4">
+          <Avatar
+            v-tooltip.bottom="route.fullPath != '/'? '回主畫面': ''"
+            image="/icon.webp"
+            shape="circle"
+            size="large"
+             :class="route.fullPath != '/'? 'cursor-pointer': ''"
+            @click="router.push('/')"
+           
+          /> <span v-if="route.fullPath != '/'" class="font-extrabold text-center text-3xl leading-none" >
+  {{ route.meta.title }}
+</span></div>
+        
       </template>
       <template #end>
         <div
           class="flex flex-col mt-4 sm:mt-auto sm:flex-row items-center justify-center gap-2 w-full"
         >
           <Button
-            :severity="route.fullPath == '/about' ? 'secondary' : 'primary'"
-            class="w-full sm:w-auto"
-            rounded
-            icon="pi pi-user"
-            label="About Me"
-            @click="router.push('/about')"
-          />
-          <Button
             :severity="route.fullPath == '/projects' ? 'secondary' : 'primary'"
             class="w-full sm:w-auto"
             rounded
             icon="pi pi-book"
-            label="My Projects"
+            label="我的專案"
             @click="router.push('/projects')"
+          />
+           <Button
+            :severity="route.fullPath == '/resumes' ? 'secondary' : 'primary'"
+            class="w-full sm:w-auto"
+            rounded
+            icon="pi pi-download"
+            label="我的履歷"
+            @click="router.push('/resumes')"
           />
           <Button
             class="w-full sm:w-auto"
@@ -52,20 +60,13 @@ const router = useRouter();
             href="https://github.com/lostmypillow"
             target="_blank"
             rel="noopener"
-            label="Visit My GitHub"
+            label="我的 GitHub"
           />
-          <Button
-            :severity="route.fullPath == '/resumes' ? 'secondary' : 'primary'"
-            class="w-full sm:w-auto"
-            rounded
-            icon="pi pi-download"
-            label="Get My Resume"
-            @click="router.push('/resumes')"
-          />
+         
         </div>
       </template>
     </Toolbar>
-    <div class="flex items-start justify-start h-full w-full">
+    <div class="flex  flex-1 w-full h-full items-center justify-center">
       <slot></slot>
     </div>
   </main>

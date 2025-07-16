@@ -2,10 +2,14 @@ import { createApp } from "vue";
 import "./style.css";
 import "primeicons/primeicons.css";
 import App from "./App.vue";
-import { router } from "./router";
+import router from "./router";
 import { definePreset } from "@primeuix/themes";
 import PrimeVue from "primevue/config";
 import Lara from "@primeuix/themes/lara";
+
+import Tooltip from 'primevue/tooltip';
+
+
 
 const MyPreset = definePreset(Lara, {
   semantic: {
@@ -33,4 +37,4 @@ createApp(App)
       options: { darkModeSelector: ".fake-dark-selector" },
     },
   })
-  .mount("#app");
+  .directive('tooltip', Tooltip).mount("#app");

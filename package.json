@@ -14,6 +14,7 @@
     "@primeuix/themes": "^1.2.1",
     "@tailwindcss/postcss": "^4.1.11",
     "@tailwindcss/vite": "^4.1.11",
+    "@tato30/vue-pdf": "^1.11.4",
     "@vue/tsconfig": "^0.7.0",
     "@vueuse/core": "^13.5.0",
     "@vueuse/integrations": "^13.5.0",

@@ -1,16 +1,7 @@
-<script setup lang="ts">
-import { useRouter } from "vue-router";
-import { ref } from "vue";
-import UserSVG from "../components/svg/UserSVG.vue";
-import HelpSVG from "../components/svg/HelpSVG.vue";
-import GitHubSVG from "../components/svg/GitHubSVG.vue";
-import DownloadSVG from "../components/svg/DownloadSVG.vue";
-const router = useRouter();
-const showDLBtns = ref(false);
-import { saveAs } from "file-saver";
-</script>
-
 <template>
-
-
+  <div class="flex flex-1 flex-col items-center justify-center w-full h-full gap-8">
+    <h1 class="text-6xl md:text-9xl">我是<span class="font-extrabold underline underline-offset-8">林家民</span></h1>
+    <h2 class="text-2xl md:text-4xl font-light">又叫 Johnny</h2>
+     <h2 class="text-2xl md:text-4xl font-light">又叫 LostMyPillow</h2>
+  </div>
 </template>
