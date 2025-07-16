@@ -143,7 +143,7 @@
   {
     "title": "printerium",
     "subtitle": "為同學報告寫的商品網站",
-    "content": "<ul><li>- 此為半搞笑用途，一半為之後要做的電商demo做準備。</li><li>- 使用 NextJS (React)。</li><li>- 由於做搞笑用途居多，功能不完全，敬請見諒～</b></li></ul>",
+    "content": "<ul><li>- 此為半課程報告用途，一半為之後要做的電商demo做準備。</li><li>- 使用 NextJS (React)。</li><li>- 由於做搞笑用途居多，功能不完全，敬請見諒～</b></li></ul>",
     "showDemo": true,
     "demoLink": "https://printerium.pages.dev/",
     "showGithub": true,
