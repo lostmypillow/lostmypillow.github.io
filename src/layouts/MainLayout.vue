@@ -19,48 +19,48 @@ const router = useRouter();
     >
       <template #start>
         <div class="flex flex-row items-center justify-center gap-4">
-          <Avatar
-            v-tooltip.bottom="route.fullPath != '/'? '回主畫面': ''"
+          <Avatar v-if="route.fullPath == '/'"
+                  v-tooltip.bottom="route.fullPath != '/'? '回主畫面': ''"
             image="/icon.webp"
             shape="circle"
             size="large"
              :class="route.fullPath != '/'? 'cursor-pointer': ''"
-            @click="router.push('/')"
+
            
-          /> <span v-if="route.fullPath != '/'" class="font-extrabold text-center text-3xl leading-none" >
+          /> <Button v-else rounded severity="primary" icon="pi pi-arrow-left" @click="router.push('/')" /> <span  class="font-extrabold text-center text-3xl leading-none" >
   {{ route.meta.title }}
 </span></div>
         
       </template>
       <template #end>
         <div
-          class="flex flex-col mt-4 sm:mt-auto sm:flex-row items-center justify-center gap-2 w-full"
+          class="flex  mt-4 sm:mt-auto flex-row items-center justify-center gap-2 w-full"
         >
           <Button
             :severity="route.fullPath == '/projects' ? 'secondary' : 'primary'"
-            class="w-full sm:w-auto"
+            class="w-full"
             rounded
             icon="pi pi-book"
-            label="我的專案"
+            label="專案"
             @click="router.push('/projects')"
           />
            <Button
             :severity="route.fullPath == '/resumes' ? 'secondary' : 'primary'"
-            class="w-full sm:w-auto"
+            class="w-full"
             rounded
             icon="pi pi-download"
-            label="我的履歷"
+            label="履歷"
             @click="router.push('/resumes')"
           />
           <Button
-            class="w-full sm:w-auto"
+              class="w-full"
             rounded
             icon="pi pi-github"
             as="a"
             href="https://github.com/lostmypillow"
             target="_blank"
             rel="noopener"
-            label="我的 GitHub"
+            label="GitHub"
           />
          
         </div>
@@ -71,11 +71,4 @@ const router = useRouter();
     </div>
   </main>
 </template>
-<style scoped lang="css">
-@media (max-width: theme("screens.sm")) {
-  /* Use the modern :deep() syntax */
-  :deep(.p-toolbar-end) {
-    width: 100% !important;
-  }
-}
-</style>
+

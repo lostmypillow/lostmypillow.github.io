@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import RedButton from "../components/RedButton.vue";
 import { saveAs } from "file-saver";
-import SecondButton from "../components/SecondButton.vue";
 import { VuePDF, usePDF } from '@tato30/vue-pdf'
 
 const {pdf: engPdf} = usePDF({url:'Resume.pdf',cMapUrl: '/cmaps/'})
@@ -18,7 +16,7 @@ const { pdf: chiPdf } = usePDF({url:'Resume - ZH.pdf',cMapUrl: '/cmaps/'})
     <Button icon="pi pi-download" label="Download English Resume" class="mt-4 md:m-auto" @click="saveAs('/Resume.pdf', 'Johnny-Resume.pdf')" />
     <VuePDF :pdf="engPdf" class="my-pdf-viewer mt-4 w-full h-full" />
   </div>
-  
+
 </div>
    
 </template>
